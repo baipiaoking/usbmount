@@ -1,3 +1,24 @@
+1. sudo apt update
+
+2. sudo apt install git
+
+3. sudo apt install debhelper build-essential
+
+4. git clone https://github.com/rbrito/usbmount
+
+5. cd usbmount
+
+6. dpkg-buildpackage -us -uc -b
+
+7. cd ..
+
+8. sudo dpkg -i usbmount_0.0.24_all.deb
+
+9. sudo apt-get install -f
+
+10. sudo reboot
+
+实现U盘自动挂载
 # USBmount
 
 The USBmount package automatically mounts USB mass storage devices (e.g.,
